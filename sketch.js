@@ -102,23 +102,32 @@ function preload(){
   beetleHit = loadImage('img/beetle-hit-loop.gif');
   splashScreen = loadImage('img/antagonist-splashscreen.png');
 
-  // sounds – these will only play if the files are available.  See README for more information.
-  sFast = loadSound('sounds/fast.mp3');
-  sGainShield = loadSound('sounds/gainshield.mp3');
-  sGetHit1 = loadSound('sounds/gethit1.mp3');
-  sGetHit2 = loadSound('sounds/gethit2.mp3');
-  sHit1 = loadSound('sounds/hit1.mp3');
-  sHit2 = loadSound('sounds/hit2.mp3');
-  sLoseShield = loadSound('sounds/loseshield.mp3');
-  sEnd = loadSound('sounds/ow-end.mp3');
-  sShieldHit1 = loadSound('sounds/shield1.mp3');
-  sShieldHit2 = loadSound('sounds/shield2.mp3');
-  sSpit1 = loadSound('sounds/spit1.mp3');
-  sSpit2 = loadSound('sounds/spit2.mp3');
-  sStart = loadSound('sounds/start.mp3');
-  gamemusic = loadSound('sounds/beetle-theme.mp3');
-  titlemusic = loadSound('sounds/beetle-title.mp3');
-  endmusic = loadSound('sounds/beetle-end.mp3');
+  // sounds – disabled in this repository because we cannot host the MP3 files locally.
+  // To prevent runtime errors when the game tries to play or query these sounds, assign
+  // each sound variable a stub object. The stub implements play(), stop(), and isPlaying()
+  // methods as no‑ops. Feel free to replace these assignments with loadSound() calls
+  // and appropriate MP3 files if you add the audio assets later.
+  const stubSound = {
+    play: () => {},
+    stop: () => {},
+    isPlaying: () => false
+  };
+  sFast = stubSound;
+  sGainShield = stubSound;
+  sGetHit1 = stubSound;
+  sGetHit2 = stubSound;
+  sHit1 = stubSound;
+  sHit2 = stubSound;
+  sLoseShield = stubSound;
+  sEnd = stubSound;
+  sShieldHit1 = stubSound;
+  sShieldHit2 = stubSound;
+  sSpit1 = stubSound;
+  sSpit2 = stubSound;
+  sStart = stubSound;
+  gamemusic = stubSound;
+  titlemusic = stubSound;
+  endmusic = stubSound;
 }
 
 function setup() {
