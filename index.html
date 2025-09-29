@@ -4,34 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antagonist Game</title>
-    <style>
-      /* Ensure the page and iframe fill the entire viewport */
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-      }
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-    </style>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" type="image/x-icon" href="antagonist.ico" />
+    <!-- Load p5.js and the p5.sound addon from the CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+    <!-- Removed p5.sound library because audio is disabled in this repository -->
+    <!-- Apply basic styles so the canvas fills the page -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
-      The original p5.js sketch is hosted on the p5.js Web Editor.  
-      This iframe embeds the running sketch so it can be accessed via GitHub Pages.
-      If you wish to self‑host the game without relying on p5js.org,
-      download the sketch from the p5.js editor and commit the source files here.
-    -->
-    <iframe
-      src="https://editor.p5js.org/JustQ721/full/7ZuW2I4DA"
-      title="Antagonist p5.js Game"
-      loading="lazy"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; fullscreen"
-    ></iframe>
+    <!-- The sketch.js script contains all of the game logic. -->
+    <script src="sketch.js"></script>
   </body>
 </html>
