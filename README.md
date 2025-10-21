@@ -5,8 +5,8 @@ Antagonist is a top-down action game built with p5.js. This repository hosts the
 ## How to Play
 
 - **Move**: Use the arrow keys or **WASD** to move your character around the arena.
-- **Dash**: Press the **spacebar** to dash or dodge quickly.
-- **Shoot**: Aim with the mouse and click to fire acid projectiles at enemies.
+- **Dash**: Press the **Shift** to dash or dodge quickly.
+- **Shoot**: Click **Spacebar** to fire acid projectiles at enemies.
 - **Survive**: Avoid enemy attacks while collecting power-ups. Your shield indicator shows your health; when it's depleted, the game ends.
 - **Restart**: The game resets automatically after you die; press any key to start again.
 
