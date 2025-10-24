@@ -5,3 +5,12 @@ html, body {
 canvas {
   display: block;
 }
+iframe {
+  width: 95%;
+  height: 95%;
+  border: 10px solid #800000; /* maroon border */
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: block;
+  margin: 2.5% auto;
+}
